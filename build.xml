@@ -17,13 +17,14 @@
       <echo>Welcome to the Registration Project!!!</echo>
    </target>
    
-   	<target name="build" description="Compile main source tree java files">
+   	<target name="build" description="Compile main source tree java files" >
    	   <mkdir dir="${build.dir}"/>
-   	   <javac destdir="${build.dir}" source="1.5" target="1.5" debug="true"
+   	   <javac destdir="${build.dir}" debug="true" includeantruntime="false"
    	      deprecation="false" optimize="false" failonerror="true">
    	      <src path="${src.dir}"/>
    	      <classpath refid="master-classpath"/>
    	   </javac>
+   		<echo>Source files Compiled Sucessfully!!!</echo>
    	</target>
    	
    	
@@ -33,6 +34,7 @@
    	         <include name="**/*.class"/>
    	      </fileset>
    	   </delete>
+   		<echo>Cleaning up output directories!!!</echo>
    	</target>
    	
    	<target name="build-war">
@@ -48,7 +50,7 @@
    	      
    	      <classes dir="${build.dir}/web"/>
    	   </war>
-   	   
+   		<echo>War file created Sucessfully!!</echo>
    	</target>
    	
 </project>
