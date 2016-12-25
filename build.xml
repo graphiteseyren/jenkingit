@@ -48,7 +48,7 @@
    	         <exclude name="portlet.jar"/>
    	      </lib>
    	      
-   	      <classes dir="${build.dir}/web"/>
+   	      <classes dir="${build.dir}"/>
    	   </war>
    		<echo>War file created Sucessfully!!</echo>
    	</target>
