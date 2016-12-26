@@ -49,6 +49,7 @@ public class register extends HttpServlet {
         try{
         
         //loading drivers for mysql
+        //loading drivers for mysql
         Class.forName("com.mysql.jdbc.Driver");
 
 	//creating connection with the database 
