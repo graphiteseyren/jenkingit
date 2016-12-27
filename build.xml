@@ -14,7 +14,7 @@
    	
    	
    <target name="info">
-      <echo>Welcome to the Registration Project!!!</echo>
+      <echo>Welcome to the Registration App!!!</echo>
    </target>
    
    	<target name="build" description="Compile main source tree java files" >
@@ -25,16 +25,6 @@
    	      <classpath refid="master-classpath"/>
    	   </javac>
    		<echo>Source files Compiled Sucessfully!!!</echo>
-   	</target>
-   	
-   	
-   	<target name="clean" description="Clean output directories">
-   	   <delete>
-   	      <fileset dir="${build.dir}">
-   	         <include name="**/*.class"/>
-   	      </fileset>
-   	   </delete>
-   		<echo>Cleaning up output directories!!!</echo>
    	</target>
    	
    	<target name="build-war">
